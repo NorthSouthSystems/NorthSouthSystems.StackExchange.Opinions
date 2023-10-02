@@ -8,14 +8,14 @@ using System.IO;
 using System.Xml;
 using System.Xml.Linq;
 
-internal class StackExchangeSiteSerializer
+public class StackExchangeSiteSerializer
 {
     private const string SevenZipExtension = ".7z";
     private const string MemoryPackExtension = ".mp.brotli";
 
     private const int MemoryPackBatchSize = 1_000_000;
 
-    internal StackExchangeSiteSerializer(string stackExchangeDirectory, string stackExchangeSite)
+    public StackExchangeSiteSerializer(string stackExchangeDirectory, string stackExchangeSite)
     {
         _stackExchangeDirectory = stackExchangeDirectory;
         _stackExchangeSite = stackExchangeSite;
@@ -27,7 +27,7 @@ internal class StackExchangeSiteSerializer
     private string SiteDirectory => Path.Combine(_stackExchangeDirectory, _stackExchangeSite);
     private string MemoryPackDirectory<T>() => Path.Combine(SiteDirectory, typeof(T).Name);
 
-    internal static void DeserializeSevenZippedXmlAndSerializeMemoryPackAll(string stackExchangeDirectory, string stackExchangeSite)
+    public static void DeserializeSevenZippedXmlAndSerializeMemoryPackAll(string stackExchangeDirectory, string stackExchangeSite)
     {
         var serializer = new StackExchangeSiteSerializer(stackExchangeDirectory, stackExchangeSite);
 
@@ -40,7 +40,7 @@ internal class StackExchangeSiteSerializer
                 serializer.DeserializeSevenZippedXml(fromXElementConstructor));
     }
 
-    internal IEnumerable<T> DeserializeSevenZippedXml<T>(Func<XElement, T> fromXElementConstructor)
+    public IEnumerable<T> DeserializeSevenZippedXml<T>(Func<XElement, T> fromXElementConstructor)
     {
         var sevenZipFilepaths = Directory.GetFiles(_stackExchangeDirectory, $"{_stackExchangeSite}*{SevenZipExtension}")
             .Where(fp =>
@@ -65,7 +65,7 @@ internal class StackExchangeSiteSerializer
         }
     }
 
-    internal void SerializeMemoryPack<T>(IEnumerable<T> source)
+    public void SerializeMemoryPack<T>(IEnumerable<T> source)
     {
         if (Directory.Exists(MemoryPackDirectory<T>()))
             throw new InvalidOperationException();
@@ -86,12 +86,12 @@ internal class StackExchangeSiteSerializer
         }
     }
 
-    internal IEnumerable<T> DeserializeMemoryPack<T>() =>
+    public IEnumerable<T> DeserializeMemoryPack<T>() =>
         DeserializeMemoryPackFilepaths<T>()
             .Select(File.ReadAllBytes)
             .SelectMany(DeserializeMemoryPackBrotliBytes<T>);
 
-    internal ParallelQuery<T> DeserializeMemoryPackParallel<T>() =>
+    public ParallelQuery<T> DeserializeMemoryPackParallel<T>() =>
         DeserializeMemoryPackFilepaths<T>()
             .AsParallel()
             .Select(File.ReadAllBytes)
