@@ -1,4 +1,4 @@
-﻿namespace FOSStrich.StackExchange;
+﻿namespace NorthSouthSystems.StackExchange;
 
 using MemoryPack;
 using System.Xml.Linq;

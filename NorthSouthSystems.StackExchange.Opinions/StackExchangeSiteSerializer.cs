@@ -1,6 +1,6 @@
-﻿namespace FOSStrich.StackExchange;
+﻿namespace NorthSouthSystems.StackExchange;
 
-using FOSStrich.Xml.Linq;
+using NorthSouthSystems.Xml.Linq;
 using MemoryPack;
 using MemoryPack.Compression;
 using MoreLinq;

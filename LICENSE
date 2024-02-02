@@ -1,6 +1,6 @@
 The licenses for files are:
 
-1) The 7-Zip binaries located in $/FOSStrich.StackExchange.Opinions/SevenZip use
+1) The 7-Zip binaries located in $/NorthSouthSystems.StackExchange.Opinions/SevenZip use
    the 7-Zip license downloaded from https://www.7-zip.org/license.txt on 2023-09-29
    and copied below.
 2) All other files: the "Apache 2.0" license.
@@ -100,7 +100,7 @@ The licenses for files are:
 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-  FOSStrich.StackExchange.Opinions
+  NorthSouthSystems.StackExchange.Opinions
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
   License for use and distribution
   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -293,7 +293,7 @@ The licenses for files are:
       same "printed page" as the copyright notice for easier
       identification within third-party archives.
 
-   Copyright 2023 Daniel J. Terry
+   Copyright 2023-2024 North South Systems, LLC
 
    Licensed under the Apache License, Version 2.0 (the "License");
    you may not use this file except in compliance with the License.

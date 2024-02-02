@@ -19,7 +19,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <ProjectReference Include="..\FOSStrich.StackExchange.Opinions\FOSStrich.StackExchange.Opinions.csproj" />
+        <ProjectReference Include="..\NorthSouthSystems.StackExchange.Opinions\NorthSouthSystems.StackExchange.Opinions.csproj" />
     </ItemGroup>
 
     <ItemGroup>

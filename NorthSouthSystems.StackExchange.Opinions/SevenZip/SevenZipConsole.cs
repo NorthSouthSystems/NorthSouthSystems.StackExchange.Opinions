@@ -1,6 +1,6 @@
-﻿namespace FOSStrich.StackExchange;
+﻿namespace NorthSouthSystems.StackExchange;
 
-using FOSStrich.IO;
+using NorthSouthSystems.IO;
 using System.Diagnostics;
 using System.IO;
 
