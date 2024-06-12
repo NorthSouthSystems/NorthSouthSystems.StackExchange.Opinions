@@ -7,23 +7,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.StackExch
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "NorthSouthSystems.StackExchange.Opinions.Test", "NorthSouthSystems.StackExchange.Opinions.Test\NorthSouthSystems.StackExchange.Opinions.Test.csproj", "{F99E4B10-24F9-4ED9-93F0-CB676ECF5C8C}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Github Workflows", "Github Workflows", "{9F546F0A-9692-4B55-A734-B36F7D6D36B5}"
-	ProjectSection(SolutionItems) = preProject
-		.github\workflows\BuildTestAnalyze.yml = .github\workflows\BuildTestAnalyze.yml
-		.github\workflows\BuildTestPackagePublish.yml = .github\workflows\BuildTestPackagePublish.yml
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Nerdbank.GitVersioning", "Nerdbank.GitVersioning", "{E6A11555-2584-4296-81A3-C1589EA774C1}"
-	ProjectSection(SolutionItems) = preProject
-		Directory.Build.props = Directory.Build.props
-		version.json = version.json
-	EndProjectSection
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Other", "Other", "{6326534A-D13F-4BE3-A844-9EDBEF25B110}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_", "_", "{6326534A-D13F-4BE3-A844-9EDBEF25B110}"
 	ProjectSection(SolutionItems) = preProject
 		.gitignore = .gitignore
+		.github\workflows\BuildTestAnalyze.yml = .github\workflows\BuildTestAnalyze.yml
+		.github\workflows\BuildTestPackagePublish.yml = .github\workflows\BuildTestPackagePublish.yml
+		Directory.Build.props = Directory.Build.props
 		LICENSE = LICENSE
 		README.md = README.md
+		version.json = version.json
 	EndProjectSection
 EndProject
 Global
