@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-    <Sdk Name="NorthSouthSystems.NET.Sdk" Version="1.0.4" />
+    <Sdk Name="NorthSouthSystems.NET.Sdk" Version="2.3.4" />
 
     <PropertyGroup>
         <TargetFramework>net8.0</TargetFramework>
@@ -9,9 +9,9 @@
     </PropertyGroup>
 
     <ItemGroup>
-        <PackageReference Include="NorthSouthSystems.BCL.Opinions" Version="2.2.5" />
-        <PackageReference Include="MemoryPack" Version="1.21.3" />
-        <PackageReference Include="morelinq" Version="4.4.0" />
+        <PackageReference Include="NorthSouthSystems.BCL.Opinions" />
+        <PackageReference Include="MemoryPack" />
+        <PackageReference Include="morelinq" />
     </ItemGroup>
 
     <ItemGroup>
