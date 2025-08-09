@@ -1,4 +1,5 @@
-﻿namespace NorthSouthSystems.StackExchange;
+﻿#nullable disable
+namespace NorthSouthSystems.StackExchange;
 
 using MemoryPack;
 using System.Xml.Linq;

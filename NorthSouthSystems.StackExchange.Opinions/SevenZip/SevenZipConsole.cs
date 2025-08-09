@@ -29,6 +29,10 @@ internal static class SevenZipConsole
         };
 
         using var process = Process.Start(processStartInfo);
+
+        if (process == null)
+            throw new Exception("Unable to start process.");
+
         process.WaitForExit();
 
         if (process.ExitCode != 0)

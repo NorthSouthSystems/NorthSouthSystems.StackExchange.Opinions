@@ -1,9 +1,9 @@
 ﻿namespace NorthSouthSystems.StackExchange;
 
-using NorthSouthSystems.Xml.Linq;
 using MemoryPack;
 using MemoryPack.Compression;
 using MoreLinq;
+using NorthSouthSystems.Xml.Linq;
 using System.IO;
 using System.Xml;
 using System.Xml.Linq;
@@ -89,18 +89,18 @@ public class StackExchangeSiteSerializer
     public IEnumerable<T> DeserializeMemoryPack<T>() =>
         DeserializeMemoryPackFilepaths<T>()
             .Select(File.ReadAllBytes)
-            .SelectMany(DeserializeMemoryPackBrotliBytes<T>);
+            .SelectMany(bytes => DeserializeMemoryPackBrotliBytes<T>(bytes) ?? []);
 
     public ParallelQuery<T> DeserializeMemoryPackParallel<T>() =>
         DeserializeMemoryPackFilepaths<T>()
             .AsParallel()
             .Select(File.ReadAllBytes)
-            .SelectMany(DeserializeMemoryPackBrotliBytes<T>);
+            .SelectMany(bytes => DeserializeMemoryPackBrotliBytes<T>(bytes) ?? []);
 
     private string[] DeserializeMemoryPackFilepaths<T>() =>
         Directory.GetFiles(MemoryPackDirectory<T>(), $"{typeof(T).Name}_*{MemoryPackExtension}");
 
-    private static List<T> DeserializeMemoryPackBrotliBytes<T>(byte[] bytes)
+    private static List<T>? DeserializeMemoryPackBrotliBytes<T>(byte[] bytes)
     {
         using var memoryPackBrotli = new BrotliDecompressor();
 
