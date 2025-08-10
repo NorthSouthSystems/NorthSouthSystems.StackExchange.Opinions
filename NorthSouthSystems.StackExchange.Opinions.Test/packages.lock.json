@@ -27,12 +27,6 @@
         "resolved": "3.7.115",
         "contentHash": "EpXamaAdRfG/BMxGgvZlTM0npRnkmXUjAj8OdNKd17t4oN+2nvjdv/KnFmzOOMDqvlwB49UCwtOHJrAQTfUBtQ=="
       },
-      "NorthSouthSystems.NET.Sdk": {
-        "type": "Direct",
-        "requested": "[3.1.4, )",
-        "resolved": "3.1.4",
-        "contentHash": "1C04D64jv6V1egj15dWLJTYXxyUJTXvx6lJYECPFU/fTjG4q35JAFlDDfgT5+PlXz2Lne1Y0kav8Protfy6bXw=="
-      },
       "xunit": {
         "type": "Direct",
         "requested": "[2.9.3, )",
@@ -193,7 +187,7 @@
         "type": "Project",
         "dependencies": {
           "MemoryPack": "[1.21.4, )",
-          "NorthSouthSystems.BCL.Opinions": "[4.0.2, )",
+          "NorthSouthSystems.BCL.Opinions": "[5.0.2, )",
           "morelinq": "[4.4.0, )"
         }
       },
@@ -215,9 +209,9 @@
       },
       "NorthSouthSystems.BCL.Opinions": {
         "type": "CentralTransitive",
-        "requested": "[4.0.2, )",
-        "resolved": "4.0.2",
-        "contentHash": "C7zYQ8eO7fga6Sn3TjTCEAsAZtZzM0OLlPbize167OXtzGR8Tb5vmrV+0h1XXhe/58DRmQliQTou46FYEjfm2A=="
+        "requested": "[5.0.2, )",
+        "resolved": "5.0.2",
+        "contentHash": "zypsivTamMXE6IjjYRRYw7D4yuW1gumUezonasYQ6u5UdEGubO5BXuKYnP18dNdRAeH1DwUfhKKcQs4QmuTzIQ=="
       }
     }
   }
