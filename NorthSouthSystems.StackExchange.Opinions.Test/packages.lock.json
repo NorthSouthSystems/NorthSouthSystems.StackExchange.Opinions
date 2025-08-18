@@ -187,7 +187,7 @@
         "type": "Project",
         "dependencies": {
           "MemoryPack": "[1.21.4, )",
-          "NorthSouthSystems.BCL.Opinions": "[5.0.2, )",
+          "NorthSouthSystems.BCL.Opinions": "[5.1.6, )",
           "morelinq": "[4.4.0, )"
         }
       },
@@ -209,9 +209,9 @@
       },
       "NorthSouthSystems.BCL.Opinions": {
         "type": "CentralTransitive",
-        "requested": "[5.0.2, )",
-        "resolved": "5.0.2",
-        "contentHash": "zypsivTamMXE6IjjYRRYw7D4yuW1gumUezonasYQ6u5UdEGubO5BXuKYnP18dNdRAeH1DwUfhKKcQs4QmuTzIQ=="
+        "requested": "[5.1.6, )",
+        "resolved": "5.1.6",
+        "contentHash": "RgvrBD5ZZH+HAEy40KXS5RB4s165EeqTz2m1tjmUC18A2jRE/lvXbgJmHIAzMveuOqb5BP1sf30UR1wk8klEUA=="
       }
     }
   }
