@@ -123,6 +123,11 @@
         "resolved": "8.0.0",
         "contentHash": "AurL6Y5BA1WotzlEvVaIDpqzpIPvYnnldxru8oXJU2yFxFUy3+pNXjXd1ymO+RA0rq0+590Q8gaz2l3Sr7fmqg=="
       },
+      "System.IO.Hashing": {
+        "type": "Transitive",
+        "resolved": "9.0.9",
+        "contentHash": "hcGHdlcKtox37LQZBLYJ3GdTlHx16F5tL96Rt8iaFscCAJW9IZt3asQbyuJMjcM9oyrn3Yh2454VY2fU0d/stw=="
+      },
       "System.Reflection.Metadata": {
         "type": "Transitive",
         "resolved": "8.0.0",
@@ -205,7 +210,7 @@
         "type": "Project",
         "dependencies": {
           "MemoryPack": "[1.21.4, )",
-          "NorthSouthSystems.BCL.Opinions": "[5.1.6, )",
+          "NorthSouthSystems.BCL.Opinions": "[6.0.3, )",
           "morelinq": "[4.4.0, )"
         }
       },
@@ -227,9 +232,12 @@
       },
       "NorthSouthSystems.BCL.Opinions": {
         "type": "CentralTransitive",
-        "requested": "[5.1.6, )",
-        "resolved": "5.1.6",
-        "contentHash": "RgvrBD5ZZH+HAEy40KXS5RB4s165EeqTz2m1tjmUC18A2jRE/lvXbgJmHIAzMveuOqb5BP1sf30UR1wk8klEUA=="
+        "requested": "[6.0.3, )",
+        "resolved": "6.0.3",
+        "contentHash": "+P9IEru/OD9Rd9VbDppdXNmLiLP/qDL+0eqmSU65RiYChgC6Z5GbBe1c1dK32Ri3Tc+PbKB9q90BGUgX2ddkrw==",
+        "dependencies": {
+          "System.IO.Hashing": "9.0.9"
+        }
       }
     }
   }
