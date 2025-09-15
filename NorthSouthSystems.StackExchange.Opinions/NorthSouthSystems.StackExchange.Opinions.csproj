@@ -1,9 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
     <PropertyGroup>
-        <TargetFramework>net8.0</TargetFramework>
         <NoWarn>NU5100</NoWarn>
-        <Description>This .NET library contains opinionated code for unzipping and processing Stack Exchange data dumps.</Description>
     </PropertyGroup>
 
     <ItemGroup>
